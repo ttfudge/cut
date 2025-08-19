@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Windows Doors and More</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Windows, doors, floors, roofing, and siding installation by trusted local pros. Request a free quote from Windows Doors and More." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Windows Doors and More" />
+  <meta property="og:description" content="Expert installation and remodeling services that stand the test of time." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Windows+Doors+and+More" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://via.placeholder.com" crossorigin />
+  <link rel="preload" as="image" href="https://via.placeholder.com/1600x600?text=Windows+Doors+and+More" imagesrcset="https://via.placeholder.com/1600x600?text=Windows+Doors+and+More 1600w" imagesizes="100vw" />
+
+  <!-- Favicon (placeholder) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='8' width='48' height='48' fill='white' stroke='%23F5A623' stroke-width='4' rx='6'/%3E%3Cline x1='32' y1='8' x2='32' y2='56' stroke='%23F5A623' stroke-width='4'/%3E%3Cline x1='8' y1='32' x2='56' y2='32' stroke='%23F5A623' stroke-width='4'/%3E%3C/svg%3E" />
+
+  <style>
+    :root {
+      --primary-color: #0a2e4d;
+      --accent-color: #f5a623;
+      --light-bg: #f9f9f9;
+      --text-color: #333;
+    }
+
+    /* Utility */
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0);
+      white-space: nowrap; border: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 0.5rem; top: -40px;
+      background: #fff;
+      color: var(--primary-color);
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: top 0.2s ease;
+      z-index: 1000;
+    }
+    .skip-link:focus { top: 0.5rem; }
+
+    /* ===== Body background fill added (keeps container white) ===== */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* subtle framed look: navy sides, light center */
+      background: linear-gradient(
+        90deg,
+        #0a2e4d 0%,
+        #0a2e4d 8%,
+        #f9f9f9 8%,
+        #f9f9f9 92%,
+        #0a2e4d 92%,
+        #0a2e4d 100%
+      );
+      color: var(--text-color);
+      min-height: 100vh;
+    }
+
+    /* Improve focus visibility */
+    a:focus-visible,
+    button:focus-visible,
+    [tabindex]:focus-visible,
+    select:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--accent-color);
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+
+    /* Container with soft navy shadows on left and right edges */
+    .container-shadow {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      position: relative;
+      box-shadow:
+        12px 0 15px -8px rgba(10, 46, 77, 0.5),
+        -12px 0 15px -8px rgba(10, 46, 77, 0.5);
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    header.container-shadow {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: var(--primary-color);
+      padding: 1rem 1rem;
+      color: white;
+      user-select: none;
+    }
+
+    header a.logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header a.logo svg {
+      flex-shrink: 0;
+    }
+
+    header a.logo span {
+      white-space: nowrap;
+      margin-left: 0.5rem;
+    }
+
+    nav.container-shadow {
+      background-color: var(--primary-color);
+      margin-top: 1rem;
+      padding: 0.75rem 0;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      user-select: none;
+    }
+
+    nav.container-shadow a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav.container-shadow a:hover,
+    nav.container-shadow a:focus {
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      outline: none;
+    }
+
+    .hero.container-shadow {
+      margin-top: 2rem;
+      position: relative;
+      background: url('https://via.placeholder.com/1600x600?text=Windows+Doors+and+More') center/cover no-repeat;
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+      padding: 6rem 2rem 4rem;
+      box-shadow: 0 8px 25px rgba(10, 46, 77, 0.3);
+    }
+
+    .hero.container-shadow::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(10, 46, 77, 0.65);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .hero-content p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      border: none;
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(245, 166, 35, 0.6);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #d98b1f;
+      outline: none;
+    }
+
+    main { display: block; }
+
+    section.container-shadow {
+      margin: 4rem auto;
+      padding: 2rem 2rem 3rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(10, 46, 77, 0.15);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      background-color: white;
+    }
+
+    section.container-shadow.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    p {
+      max-width: 750px;
+      margin: 0 auto 3rem;
+      font-size: 1.1rem;
+      color: var(--text-color);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    ul {
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem 2rem;
+    }
+
+    ul li {
+      background: white;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 1rem 1.6rem;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      flex: 1 1 220px;
+      text-align: center;
+    }
+
+    .carousel.container-shadow {
+      margin: 2rem auto 4rem;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 1.4s ease-in-out;
+      will-change: transform;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      user-select: none;
+    }
+
+    .carousel-slide[aria-hidden="true"] { visibility: hidden; }
+    .carousel-slide[aria-hidden="false"] { visibility: visible; }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(245, 166, 35, 0.85);
+      border: none;
+      color: var(--primary-color);
+      font-size: 2.2rem;
+      padding: 0.3rem 0.9rem;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+      user-select: none;
+      z-index: 10;
+    }
+
+    .carousel-btn:hover,
+    .carousel-btn:focus {
+      background-color: #d98b1f;
+      outline: none;
+    }
+
+    .carousel-btn.prev { left: 1rem; }
+    .carousel-btn.next { right: 1rem; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      cursor: default;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 4px solid var(--accent-color);
+    }
+
+    .service-card-content { padding: 1.5rem; flex-grow: 1; }
+
+    .service-card-content h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      font-size: 1.5rem;
+    }
+
+    .service-card-content p { margin: 0; color: var(--text-color); font-size: 1rem; }
+
+    #testimonials.container-shadow {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 6px 25px rgba(10, 46, 77, 0.1);
+      background-color: white;
+    }
+
+    .testimonial-container { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      flex: 1 1 280px;
+      font-style: italic;
+      color: var(--primary-color);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 180px;
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .testimonial-card h4 {
+      margin-top: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      color: var(--accent-color);
+      align-self: flex-end;
+    }
+
+    #contact.container-shadow {
+      max-width: 600px;
+      margin: 0 auto 4rem;
+      padding: 3rem 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    #contact h2 { color: var(--primary-color); margin-bottom: 1rem; font-weight: 700; font-size: 2rem; }
+    #contact p { font-size: 1.1rem; margin-bottom: 2rem; }
+
+    #contact a.phone-link {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      font-weight: 700;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(245, 166, 35, 0.6);
+      transition: background-color 0.3s ease;
+    }
+
+    #contact a.phone-link:hover,
+    #contact a.phone-link:focus { background-color: #d98b1f; outline: none; }
+
+    /* Appointment Form Styles */
+    #appointment-form label { display: block; margin-bottom: 0.3rem; font-weight: 600; color: var(--primary-color); text-align: left; }
+
+    #appointment-form input,
+    #appointment-form textarea,
+    #appointment-form select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
+
+    #appointment-form textarea { resize: vertical; }
+
+    #appointment-form button.btn-primary {
+      width: 100%;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 50px;
+    }
+
+    #form-status { margin-top: 1rem; min-height: 1.25rem; color: var(--primary-color); }
+
+    footer.container-shadow {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      user-select: none;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    /* Respect reduced motion preferences */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header.container-shadow {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        gap: 0.5rem;
+        padding: 1rem 1rem;
+      }
+
+      nav.container-shadow { gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 0.75rem; }
+      .hero-content h1 { font-size: 2.3rem; }
+      .carousel-slide img { height: 300px; border-radius: 10px; }
+      .service-card img { height: 140px; }
+      .testimonial-container { flex-direction: column; }
+      section.container-shadow { margin: 2rem 1rem 3rem; padding: 1.5rem 1.5rem 2.5rem; }
+      #contact.container-shadow { margin: 2rem 1rem 3rem; padding: 2rem 1.5rem; }
+    }
+  </style>
+
+  <!-- LocalBusiness Schema.org (customize as needed) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Windows Doors and More",
+    "image": "https://via.placeholder.com/1200x630?text=Windows+Doors+and+More",
+    "telephone": "+1-234-567-890",
+    "url": "",
+    "priceRange": "$$",
+    "areaServed": "Local",
+    "description": "Expert installation and remodeling services: windows, doors, floors, roofing, and siding."
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="container-shadow">
+    <a href="#" class="logo" aria-label="Windows Doors and More home">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 64 64"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <rect x="8" y="8" width="48" height="48" stroke="#F5A623" stroke-width="4" rx="6" ry="6" fill="none" />
+        <line x1="32" y1="8" x2="32" y2="56" stroke="#F5A623" stroke-width="4" />
+        <line x1="8" y1="32" x2="56" y2="32" stroke="#F5A623" stroke-width="4" />
+      </svg>
+      <span>Windows Doors and More</span>
+    </a>
+  </header>
+
+  <nav class="container-shadow" role="navigation" aria-label="Primary navigation">
+    <a href="#windows">Windows</a>
+    <a href="#doors">Doors</a>
+    <a href="#floors">Floors</a>
+    <a href="#roofing">Roofing</a>
+    <a href="#siding">Siding</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero container-shadow" aria-label="Hero banner">
+      <div class="hero-content">
+        <h1>Your Home Deserves the Best Windows &amp; Doors</h1>
+        <p>Expert installation and remodeling services that stand the test of time.</p>
+        <a href="#contact" class="btn-primary">Request a Free Quote</a>
+      </div>
+    </section>
+
+    <div class="carousel container-shadow" aria-label="Portfolio image carousel" role="region" aria-roledescription="carousel">
+      <div class="carousel-track" id="carousel-track" role="group" aria-live="off">
+        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 7">
+          <img src="https://via.placeholder.com/1000x500?text=Windows+Project+1" alt="Windows project example 1" loading="eager" decoding="async" fetchpriority="low" />
+        </div>
+        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 7">
+          <img src="https://via.placeholder.com/1000x500?text=Doors+Project+2" alt="Doors project example 2" loading="lazy" decoding="async" />
+        </div>
+        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 7">
+          <img src="https://via.placeholder.com/1000x500?text=Floors+Project+3" alt="Floors project example 3" loading="lazy" decoding="async" />
+        </div>
+        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 4 of 7">
+          <img src="https://via.placeholder.com/1000x500?text=Roofing+Project+4" alt="Roofing project example 4" loading="lazy" decoding="async" />
+        </div>
+        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 5 of 7">
+          <img src="https://via.placeholder.com/1000x500?text=Siding+Project+5" alt="Siding project example 5" loading="lazy" decoding="async" />
+        </div>
+        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 6 of 7">
+          <img src="https://via.placeholder.com/1000x500?text=Other+Project+6" alt="Other project example 6" loading="lazy" decoding="async" />
+        </div>
+        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 7 of 7">
+          <img src="https://via.placeholder.com/1000x500?text=Windows+Project+7" alt="Windows project example 7" loading="lazy" decoding="async" />
+        </div>
+      </div>
+      <button class="carousel-btn prev" aria-label="Previous slide" aria-controls="carousel-track">&#10094;</button>
+      <button class="carousel-btn next" aria-label="Next slide" aria-controls="carousel-track">&#10095;</button>
+      <div class="carousel-status visually-hidden" aria-live="polite"></div>
+    </div>
+
+    <section id="windows" class="container-shadow" aria-label="Windows services">
+      <h2>Windows</h2>
+      <p>Upgrade your home with energy-efficient, stylish windows.</p>
+      <ul>
+        <li>ProVia &amp; Composite Windows</li>
+        <li>Energy-Efficient Vinyl Options</li>
+        <li>Custom Fit &amp; Finish</li>
+        <li>Professional Installation</li>
+      </ul>
+    </section>
+
+    <section id="doors" class="container-shadow" aria-label="Doors services">
+      <h2>Doors</h2>
+      <p>Custom doors that combine security with modern design.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x200?text=Doors" alt="Door installation" />
+          <div class="service-card-content">
+            <h3>Durable Door Solutions</h3>
+            <p>Custom doors that combine security with modern design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="floors" class="container-shadow" aria-label="Flooring services">
+      <h2>Floors</h2>
+      <p>Upgrade your home with expert flooring installation.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x200?text=Floors" alt="Floor installation" />
+          <div class="service-card-content">
+            <h3>Expert Flooring Installation</h3>
+            <p>From hardwood to tile, quality floors done right.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roofing" class="container-shadow" aria-label="Roofing services">
+      <h2>Roofing</h2>
+      <p>Protect your home with top-grade roofing services.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x200?text=Roofing" alt="Roofing service" />
+          <div class="service-card-content">
+            <h3>Reliable Roofing Solutions</h3>
+            <p>Durable roofs that withstand the elements and add value.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="siding" class="container-shadow" aria-label="Siding services">
+      <h2>Siding</h2>
+      <p>Enhance your home’s exterior with quality siding.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x200?text=Siding" alt="Siding service" />
+          <div class="service-card-content">
+            <h3>Professional Siding Installation</h3>
+            <p>Improve insulation and style with our siding options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container-shadow" aria-label="Customer testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card" tabindex="0">
+          <p>"Fantastic service and expert installation. Our home feels so much more comfortable!"</p>
+          <h4>- Sarah M.</h4>
+        </div>
+        <div class="testimonial-card" tabindex="0">
+          <p>"The team was professional and efficient. Highly recommend for windows and doors."</p>
+          <h4>- James R.</h4>
+        </div>
+        <div class="testimonial-card" tabindex="0">
+          <p>"Great quality floors and amazing customer support throughout the process."</p>
+          <h4>- Emily W.</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container-shadow" aria-label="Contact form and info">
+      <h2>Get in Touch</h2>
+      <p>Call us today or fill out the form below to schedule your appointment.</p>
+      <a href="tel:+1234567890" class="phone-link" aria-label="Call phone number">+1 (234) 567-890</a>
+      <form id="appointment-form" aria-label="Appointment form" style="margin-top: 2rem;" novalidate>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required aria-required="true" autocomplete="name" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required aria-required="true" autocomplete="email" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required aria-required="true" inputmode="tel" autocomplete="tel" pattern="[+()\-\s0-9]{7,}" placeholder="e.g. (234) 567-890" />
+
+        <label for="service">Service Interested In</label>
+        <select id="service" name="service" required aria-required="true" autocomplete="off">
+          <option value="">-- Please select a service --</option>
+          <option value="windows">Windows</option>
+          <option value="doors">Doors</option>
+          <option value="floors">Floors</option>
+          <option value="roofing">Roofing</option>
+          <option value="siding">Siding</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="4" autocomplete="off"></textarea>
+
+        <button type="submit" class="btn-primary">Submit</button>
+        <div id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container-shadow" aria-label="Site footer">
+    &copy; <span id="year"></span> Windows Doors and More. All rights reserved.
+  </footer>
+
+  <script>
+    // Defer JS until DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+      // Footer year
+      var yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Carousel
+      var carousel = document.querySelector('.carousel');
+      var track = document.querySelector('.carousel-track');
+      var slides = Array.prototype.slice.call(track.children);
+      var prevButton = document.querySelector('.carousel-btn.prev');
+      var nextButton = document.querySelector('.carousel-btn.next');
+      var statusEl = document.querySelector('.carousel-status');
+      var prefersReducedMotion = false;
+      try {
+        prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      } catch (e) {}
+      var currentIndex = 0;
+      var intervalMs = 7000;
+      var slideInterval = null;
+      var isHoveredOrFocused = false;
+
+      function updateAria() {
+        slides.forEach(function (slide, i) {
+          var isCurrent = i === currentIndex;
+          slide.setAttribute('aria-hidden', isCurrent ? 'false' : 'true');
+          slide.setAttribute('tabindex', isCurrent ? '0' : '-1');
+          slide.setAttribute('aria-label', 'Slide ' + (i + 1) + ' of ' + slides.length);
+        });
+        if (statusEl) {
+          statusEl.textContent = 'Showing slide ' + (currentIndex + 1) + ' of ' + slides.length;
+        }
+      }
+
+      function moveToSlide(index) {
+        if (!track) return;
+        track.style.transition = prefersReducedMotion ? 'none' : 'transform 1.4s ease-in-out';
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        updateAria();
+      }
+
+      function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= slides.length) currentIndex = 0;
+        moveToSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) currentIndex = slides.length - 1;
+        moveToSlide(currentIndex);
+      }
+
+      function startInterval() {
+        if (prefersReducedMotion) return;
+        if (slideInterval) clearInterval(slideInterval);
+        slideInterval = setInterval(function () {
+          if (!isHoveredOrFocused) nextSlide();
+        }, intervalMs);
+      }
+
+      function stopInterval() { if (slideInterval) { clearInterval(slideInterval); slideInterval = null; } }
+
+      // Initialize carousel aria states
+      updateAria();
+
+      // Buttons
+      if (nextButton) {
+        nextButton.addEventListener('click', function () {
+          nextSlide();
+          startInterval();
+        });
+      }
+      if (prevButton) {
+        prevButton.addEventListener('click', function () {
+          prevSlide();
+          startInterval();
+        });
+      }
+
+      // Keyboard navigation on carousel region
+      if (carousel) {
+        carousel.addEventListener('keydown', function (e) {
+          var key = e.key || e.code;
+          if (key === 'ArrowRight') { e.preventDefault(); nextSlide(); startInterval(); }
+          if (key === 'ArrowLeft') { e.preventDefault(); prevSlide(); startInterval(); }
+        });
+        carousel.addEventListener('mouseenter', function () { isHoveredOrFocused = true; stopInterval(); });
+        carousel.addEventListener('mouseleave', function () { isHoveredOrFocused = false; startInterval(); });
+        carousel.addEventListener('focusin', function () { isHoveredOrFocused = true; stopInterval(); });
+        carousel.addEventListener('focusout', function () { isHoveredOrFocused = false; startInterval(); });
+      }
+
+      // Basic swipe support
+      var startX = null;
+      var threshold = 40;
+      if (carousel) {
+        carousel.addEventListener('pointerdown', function (e) { startX = e.clientX; });
+        carousel.addEventListener('pointerup', function (e) {
+          if (startX === null) return;
+          var dx = e.clientX - startX;
+          if (dx > threshold) { prevSlide(); startInterval(); }
+          if (dx < -threshold) { nextSlide(); startInterval(); }
+          startX = null;
+        });
+      }
+
+      // Auto-advance if motion allowed
+      startInterval();
+
+      // Scroll reveal animation for sections
+      var sections = document.querySelectorAll('section.container-shadow');
+      if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+        sections.forEach(function (section) { section.classList.add('visible'); });
+      } else {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.15 });
+        sections.forEach(function (section) { observer.observe(section); });
+      }
+
+      // Form handling (client-side only)
+      var form = document.getElementById('appointment-form');
+      var formStatus = document.getElementById('form-status');
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var name = document.getElementById('name');
+          var email = document.getElementById('email');
+          var phone = document.getElementById('phone');
+          var service = document.getElementById('service');
+          var isValid = true;
+
+          [name, email, phone, service].forEach(function (field) {
+            if (!field.checkValidity()) {
+              isValid = false;
+              field.setAttribute('aria-invalid', 'true');
+            } else {
+              field.removeAttribute('aria-invalid');
+            }
+          });
+
+          if (!isValid) {
+            if (formStatus) formStatus.textContent = 'Please correct the highlighted fields.';
+            return;
+          }
+
+          if (formStatus) formStatus.textContent = 'Thanks, ' + name.value + '! We\'ll contact you shortly.';
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
