@@ -329,6 +329,35 @@
 
     .carousel-btn.prev { left: 1rem; }
     .carousel-btn.next { right: 1rem; }
+    
+    /* Carousel dots */
+    .carousel-dots {
+      position: absolute;
+      bottom: 0.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5rem;
+      z-index: 11;
+      padding: 0.25rem 0.5rem;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 999px;
+      backdrop-filter: blur(2px);
+    }
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid var(--primary-color);
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+    }
+    .carousel-dot[aria-selected="true"] {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+    .carousel-dot:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
 
     .services-grid {
       display: grid;
@@ -589,6 +618,7 @@
       </div>
       <button class="carousel-btn prev" aria-label="Previous slide" aria-controls="carousel-track">&#10094;</button>
       <button class="carousel-btn next" aria-label="Next slide" aria-controls="carousel-track">&#10095;</button>
+      <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Choose slide"></div>
       <div class="carousel-status visually-hidden" aria-live="polite"></div>
     </div>
 
@@ -729,6 +759,8 @@
       var prevButton = document.querySelector('.carousel-btn.prev');
       var nextButton = document.querySelector('.carousel-btn.next');
       var statusEl = document.querySelector('.carousel-status');
+      var dotsContainer = document.getElementById('carousel-dots');
+      var dots = [];
       var prefersReducedMotion = false;
       try {
         prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -748,6 +780,7 @@
         if (statusEl) {
           statusEl.textContent = 'Showing slide ' + (currentIndex + 1) + ' of ' + slides.length;
         }
+        updateDots();
       }
 
       function moveToSlide(index) {
@@ -779,7 +812,64 @@
 
       function stopInterval() { if (slideInterval) { clearInterval(slideInterval); slideInterval = null; } }
 
+      function buildDots() {
+        if (!dotsContainer) return;
+        dotsContainer.innerHTML = '';
+        dots = slides.map(function (_, i) {
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'carousel-dot';
+          btn.setAttribute('role', 'tab');
+          btn.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+          btn.setAttribute('aria-controls', 'carousel-track');
+          btn.addEventListener('click', function () {
+            currentIndex = i;
+            moveToSlide(currentIndex);
+            startInterval();
+          });
+          dotsContainer.appendChild(btn);
+          return btn;
+        });
+        // Keyboard navigation on dots
+        dotsContainer.addEventListener('keydown', function (e) {
+          var key = e.key || e.code;
+          var focusedIndex = dots.indexOf(document.activeElement);
+          if (key === 'ArrowRight') {
+            e.preventDefault();
+            var nextIdx = (focusedIndex + 1 + dots.length) % dots.length;
+            dots[nextIdx].focus();
+          }
+          if (key === 'ArrowLeft') {
+            e.preventDefault();
+            var prevIdx = (focusedIndex - 1 + dots.length) % dots.length;
+            dots[prevIdx].focus();
+          }
+          if (key === 'Enter' || key === ' ') {
+            e.preventDefault();
+            var idx = focusedIndex >= 0 ? focusedIndex : currentIndex;
+            currentIndex = idx;
+            moveToSlide(currentIndex);
+            startInterval();
+          }
+        });
+        // Pause on interaction
+        dotsContainer.addEventListener('focusin', function () { isHoveredOrFocused = true; stopInterval(); });
+        dotsContainer.addEventListener('focusout', function () { isHoveredOrFocused = false; startInterval(); });
+        dotsContainer.addEventListener('mouseenter', function () { isHoveredOrFocused = true; stopInterval(); });
+        dotsContainer.addEventListener('mouseleave', function () { isHoveredOrFocused = false; startInterval(); });
+        updateDots();
+      }
+
+      function updateDots() {
+        if (!dots || !dots.length) return;
+        dots.forEach(function (dot, i) {
+          var selected = i === currentIndex;
+          dot.setAttribute('aria-selected', selected ? 'true' : 'false');
+        });
+      }
+
       // Initialize carousel aria states
+      buildDots();
       updateAria();
 
       // Buttons
